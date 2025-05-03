@@ -5,7 +5,7 @@ const connectDB = require("./config/database");
 const biodataRoutes = require("./routes/biodataRoutes");
 const cronJobs = require("./services/cronJobs");
 
-cronJobs.cleanupTask(); // Call the function instead of cronJobs.start()
+cronJobs.cleanupTask(); // Call the funchhhhtion instead of cronJobs.start()
 
 
 const app = express();

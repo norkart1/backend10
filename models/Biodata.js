@@ -1,0 +1,9 @@
+const mongoose = require("mongoose");
+
+const BiodataSchema = new mongoose.Schema({
+    name: { type: String, required: true },
+    age: { type: Number, required: true },
+    email: { type: String, required: true, unique: true }
+}, { timestamps: true });
+
+module.exports = mongoose.model("Biodata", BiodataSchema);
